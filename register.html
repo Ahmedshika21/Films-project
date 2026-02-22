@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create an account</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>create a new account</h2>
+        <form id="registerForm">
+            <label for="registerUsername">username:</label>
+            <input type="text" id="registerUsername" name="registerUsername" placeholder="أدخل اسم المستخدم" required>
+        
+            <label for="registerPassword"> password:</label>
+            <input type="password" id="registerPassword" name="registerPassword" placeholder="أدخل كلمة المرور" required>
+        
+            <label for="registerConfirmPassword">ConfirmPassword:</label>
+            <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" placeholder="أعد إدخال كلمة المرور" required>
+        
+            <button type="submit">create an account</button>
+        </form>
+        <p id="registerMessage"></p>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

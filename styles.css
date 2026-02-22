@@ -1,0 +1,382 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 25px;
+    color: #f90;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 15px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #e68000;
+}
+
+/* Movies Section */
+.content-section {
+    padding: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f90;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    margin-bottom: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.1);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+}
+
+.movie-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.movie-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f90;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.movie-card a:hover {
+    background-color: #e68000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .movie-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f90;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #333;
+}   
+.movie-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.col img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.col h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.col p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #f5f5f5;
+}
+
+.col a {
+    display: inline-block;  
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f90;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.col a:hover {
+    background-color: #e68000;
+}
+
+button, input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e68000;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+#contact-us {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+#contact-us h2 {
+    margin-bottom: 20px;
+     text-align: center;
+
+}
+
+#contact-us form {
+    max-width: 400px;
+    margin: 0 auto;  
+    text-align: center; 
+    justify-content: center; 
+}
+
+#contact-us label {     
+    display: block;
+    margin-bottom: 5px; 
+    color: #f5f5f5;
+}
+
+#contact-us input[type="text"],
+#contact-us input[type="email"],
+#contact-us textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    background-color: #555;
+    color: #f5f5f5;
+}
+
+#contact-us input[type="submit"] {  
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-us input[type="submit"]:hover {    
+    background-color: #e68000;
+}
+#contact-us p {
+    margin-top: 20px;
+    color: #f5f5f5;
+}
+#contact-us button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f90;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+#contact-us button:hover {
+    background-color: #e68000;
+}   
+#contact-us a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+#contact-us a:hover{
+    background-color: #e68000;
+}
+#contact-us a:hover {
+    text-decoration: underline;
+}
+#contact-us footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #f5f5f5;
+}   
